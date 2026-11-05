@@ -1,0 +1,11 @@
+name: Running Multi-Line Shell
+on: workflow_dispatch
+jobs:
+  multi-line-command:
+    runs-on: windows-latest
+    steps:
+      - name: Print three statements
+        run: |
+            echo "1 + 1"
+            echo "equals"
+            echo "2"
